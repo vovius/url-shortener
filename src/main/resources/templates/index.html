@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>URL Shortener</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="#" th:action="@{/}" th:object="${link}" method="post">
+    <p>Post link here: <input type="text" th:field="*{value}" /><input type="submit" value="Submit" /></p>
+</form></body>
+
+<a th:href="${url}" th:text="${url}" target='_blank'/>
+</html>
